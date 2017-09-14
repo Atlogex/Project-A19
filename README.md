@@ -27,7 +27,6 @@ This is Project-A19. Open Source project by [Atlogex](https://www.atlogex.com/).
 - `MySQL`
 - `JS`
 - `LESS`
-- `LESS`
 
 
  Design

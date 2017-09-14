@@ -2,24 +2,21 @@
 /.idea/
 
 
-
 # Yii [Use composer for init ]
+### Yii template
 /public_html/assets/*
 !public_html/assets/.gitignore
 
-/yii2-basic/vendor/*
-/yii2-basic/runtime/*
-!yii2-basic/runtime/.gitkeep
-/yii2-basic/config/*
-!yii2-basic/config/.gitkeep
+/cf-yiia/.vagrant
+/cf-yiia/vendor/*
+/cf-yiia/environments/*
+/cf-yiia/backend/runtime/*
+!cf-yiia/backend/runtime/.gitkeep
+/cf-yiia/frontend/runtime/*
+!cf-yiia/frontend/runtime/.gitkeep
+/cf-yiia/common/config/*
+!/cf-yiia/common/onfig/.gitkeep
 
-
-### Yii template
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
 
 ### JetBrains template
 ## File-based project format:

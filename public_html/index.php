@@ -1,12 +1,17 @@
 <?php
-
-// comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
-require(__DIR__ . '/../yii2-basic/vendor/autoload.php');
-require(__DIR__ . '/../yii2-basic/vendor/yiisoft/yii2/Yii.php');
+require(__DIR__ . '/../cf-yiia/vendor/autoload.php');
+require(__DIR__ . '/../cf-yiia/vendor/yiisoft/yii2/Yii.php');
+require(__DIR__ . '/../cf-yiia/common/config/bootstrap.php');
+require(__DIR__ . '/../cf-yiia/frontend/config/bootstrap.php');
 
-$config = require(__DIR__ . '/../yii2-basic/config/web.php');
+$config = yii\helpers\ArrayHelper::merge(
+    require(__DIR__ . '/../cf-yiia/common/config/main.php'),
+    require(__DIR__ . '/../cf-yiia/common/config/main-local.php'),
+    require(__DIR__ . '/../cf-yiia/frontend/config/main.php'),
+    require(__DIR__ . '/../cf-yiia/frontend/config/main-local.php')
+);
 
 (new yii\web\Application($config))->run();
