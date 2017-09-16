@@ -1,0 +1,29 @@
+{
+  "name": "project-a19",
+  "version": "0.1.0",
+  "description": "Project-A19: SPA Yii+React",
+  "main": "cmn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atlogex/Project-A19.git"
+  },
+  "keywords": [
+    "yiireact"
+  ],
+  "author": "Atlogex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atlogex/Project-A19/issues"
+  },
+  "homepage": "https://github.com/Atlogex/Project-A19#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0"
+  }
+}
