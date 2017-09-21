@@ -9,47 +9,39 @@ module.exports = {
 	},
 
 	module: {
-		loaders: [
-			{
-				test: /.js$/,
-				loader: 'babel-loader'
-			},
-			/*{
-			 test: /\.js$/,
-			 loader: "babel",
-			 exclude: [/node_modules/, /public/]
-			 },*/
+		rules: [
 			{
 				test: /\.css$/,
-				loader: "style-loader!css-loader!autoprefixer-loader",
-				exclude: [/node_modules/, /public/]
-			},
-			{test: /\.html$/, loader: 'html-loader'},
-			{
-				test: /\.gif$/,
-				loader: "url-loader?limit=10000&mimetype=image/gif"
+				use: [
+					'style-loader',
+					'css-loader'
+				]
 			},
 			{
-				test: /\.jpg$/,
-				loader: "url-loader?limit=10000&mimetype=image/jpg"
+				test: /\.(png|svg|jpg|gif)$/,
+				use: [
+					'file-loader'
+				]
 			},
 			{
-				test: /\.png$/,
-				loader: "url-loader?limit=10000&mimetype=image/png"
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: [
+					'file-loader'
+				]
 			},
 			{
-				test: /\.svg/,
-				loader: "url-loader?limit=26000&mimetype=image/svg+xml"
+				test: /\.js$/,
+				loader: 'babel-loader',
 			},
 			{
 				test: /\.jsx$/,
-				loader: "react-hot!babel",
-				exclude: [/node_modules/, /public/]
-			},
-			{
-				test: /\.json$/,
-				loader: "json-loader"
+				use: 'babel-loader'
 			}
 		]
-	}
+	},
+	resolve: {
+		modules: ['node_modules'],
+		extensions: [".js", ".json", ".jsx", ".css"]
+	},
+	plugins: [],
 };
