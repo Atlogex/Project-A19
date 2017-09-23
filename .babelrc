@@ -1,9 +1,12 @@
 {
   "env": {
     "test": {
-      "presets": ["es2015", "react", "stage-0"],
+      "presets": ["env", "react", "stage-4"],
       "plugins": [
-        "add-module-exports"
+        {
+          "libraryName": "antd",
+          "style": true
+        }
       ]
     }
   }

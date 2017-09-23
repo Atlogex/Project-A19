@@ -8,7 +8,7 @@ import React from 'react';
 import {Menu, Icon, Switch} from 'antd';
 const {SubMenu} = Menu;
 
-export default class menuMain extends React.Component {
+class menuMain extends React.Component {
 
 	state = {
 		mode: 'inline',

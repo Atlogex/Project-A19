@@ -30,15 +30,65 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.js$/,
-				loader: 'babel-loader',
+				test: /\.js?$/, // определяем тип файлов
+				exclude: /(node_modules)/,
+				use: ["babel-loader"]
 			},
 			{
-				test: /\.jsx$/,
-				use: 'babel-loader'
-			}
-		]
+				test: /\.jsx?$/, // определяем тип файлов
+				exclude: /(node_modules)/,
+				use: ["babel-loader"]
+			},
+
+			/*{
+			 test: /\.jsx?$/, // определяем тип файлов
+			 exclude: /(node_modules)/,
+			 loader: ["babel-loader"],
+			 query:{
+			 presets:["es2015", "react"]
+			 }
+			 },
+			 {
+			 test: /\.jsx$/,
+			 exclude: /node_modules/,
+			 loader: 'babel-loader'
+			 /*query: {
+			 // presets: ['es2015', 'stage-0', 'react'],  // U t '='
+			 // presets: ['es2015', 'stage-0', ], // U t '<'
+			 // presets: ['react'], // U t '='
+			 // presets: ['es2015'], // U t '='
+			 presets: ['es6'], // U t '='
+			 }
+
+			 },
+
+
+			 {
+			 test: /\.jsx$/,
+			 exclude: /node_modules/,
+			 loader: 'babel-loader',
+			 query: {
+			 stage: 0,
+			 optional: ['runtime'],
+			 plugins: [
+			 'react-require' // <-- THIS IS YOUR AMENDMENT
+			 ]
+			 }
+			 }*/
+
+			/*],
+			 loaders: [   //загрузчики
+			 {
+			 test: /\.jsx?$/, // определяем тип файлов
+			 exclude: /(node_modules)/,
+			 loader: ["babel-loader"],
+			 query: {
+			 presets: ["env", "react"]
+			 }
+			 }
+			 */]
 	},
+
 	resolve: {
 		modules: ['node_modules'],
 		extensions: [".js", ".json", ".jsx", ".css"]
