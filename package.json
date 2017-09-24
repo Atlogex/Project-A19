@@ -1,44 +1,1 @@
-{
-  "name": "project-a19",
-  "version": "0.1.0",
-  "description": "Project-A19: SPA Yii+React",
-  "main": "cmn.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Atlogex/Project-A19.git"
-  },
-  "keywords": [
-    "yiireact"
-  ],
-  "author": "Atlogex",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Atlogex/Project-A19/issues"
-  },
-  "homepage": "https://github.com/Atlogex/Project-A19#readme",
-  "dependencies": {
-    "antd": "^2.13.2",
-    "babel-polyfill": "^6.26.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  },
-  "devDependencies": {
-    "autoprefixer-loader": "*",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^5.4.2",
-    "babel-plugin-import": "^1.5.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.22.0",
-    "file-loader": "^0.8.5",
-    "html-webpack-plugin": "^2.30.1",
-    "json-loader": "^0.5.4",
-    "jsxobj": "^1.1.0",
-    "react-hot-loader": "^1.3.0",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.6",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
-  }
-}
+{  "name": "project-a19",  "version": "0.1.0",  "description": "Project-A19: SPA Yii+React",  "main": "cmn.js",  "scripts": {},  "repository": {    "type": "git",    "url": "git+https://github.com/Atlogex/Project-A19.git"  },  "keywords": [    "yiireact"  ],  "author": "Atlogex",  "license": "ISC",  "bugs": {    "url": "https://github.com/Atlogex/Project-A19/issues"  },  "homepage": "https://github.com/Atlogex/Project-A19#readme",  "dependencies": {    "antd": "*",    "react": "*",    "react-dom": "*"  },  "devDependencies": {    "autoprefixer-loader": "*",    "babel-core": "^6.26.0",    "babel-loader": "^7.1.2",    "babel-preset-env": "^1.6.0",    "babel-preset-stage-0": "^6.24.1",    "css-loader": "*",    "file-loader": "*",    "json-loader": "*",    "style-loader": "*",    "url-loader": "*",    "webpack": "*"  }}

@@ -1,13 +1,7 @@
 {
-  "env": {
-    "test": {
-      "presets": ["env", "react", "stage-4"],
-      "plugins": [
-        {
-          "libraryName": "antd",
-          "style": true
-        }
-      ]
-    }
-  }
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ]
 }
