@@ -9,16 +9,16 @@ This is Project-A19. Open Source project by [Atlogex](https://www.atlogex.com/).
  Directory Structure
  -------------------
 
-       public_html/        entry point
-       yii2-basic/         main framework
-
+       app-fd/             - client frontend
+       cf-yii/             - backend framework
+       public_html/        - entry point
 
  Tools
  -------------------
 
 - `Composer`
-- `Bower`
-- `Gulp`
+- `Webpack`
+- `Gulp (maybe)`
 
  Stack
  -------------------
@@ -33,5 +33,6 @@ This is Project-A19. Open Source project by [Atlogex](https://www.atlogex.com/).
  -------------------
 
  - `Yii2`
+ - `REST`
  - `React`
- - `Bootstrap`
+ - `Ant Design`
